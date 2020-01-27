@@ -4,7 +4,12 @@ MinManagerでは**ラベル作成**や**画像管理**など、表計算ソフ�
 また、デスクトップアプリケーションとして作成しているためインターネットに接続していない環境でも動作します  
 外部と通信しないので安心です
 
-(WPFなので**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください)
+
+(WPFなので**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください)  
+
+
+初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください…  
+(.NET Coreの PublishSingleFile の仕様で初回にunzip処理が発生するため )
 
 # デモ
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
@@ -38,14 +43,6 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
         * ユーザカスタムラベル機能 実装
     * (OTHER)その他
         * ラベルテンプレートの拡充　(やけくそ15パターン)
-* **v1.1.0**
-    * (NEW) 新機能
-        * 簡易レポート機能 実装
-    * (OTHER)その他
-        * オンライン機能 可視化
-* **v1.0.0**
-    * (NEW) 新機能
-        * (偉大なる) 初期リリース
 
 # 機能
 * 検索
