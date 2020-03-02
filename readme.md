@@ -1,32 +1,61 @@
 # これなに？
-**MinManager** は標本管理に困っている鉱物コレクター向けの **無料** アプリケーションです  
-MinManagerでは**ラベル作成**や**画像管理**など、表計算ソフトでは難しい便利な機能をお使いいただけます  
-また、デスクトップアプリケーションとして作成しているためインターネットに接続していない環境でも動作します  
-外部と通信しないので安心です
+**MinManager は 無料 の 鉱物標本管理アプリケーション です**  
+MinManagerでは表計算ソフトでは難しい**ラベル作成**や**画像管理**といった便利な機能をお使いいただけます  
+また、インターネットに接続していない環境でも動作します、外部と通信しないので安心です  
 
+最新バージョンのZIPファイルは
+**[ ここからダウンロード ](https://github.com/nokatsu/MinManager/releases/download/v1.2.2/MinManager-v1.2.3-win-x64.zip)**
+できます  
+使用方法については本ドキュメントをご参照ください
 
-(WPFなので**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください)  
-
-
-初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください…  
-(.NET Coreの PublishSingleFile の仕様で初回にunzip処理が発生するため )
-
-# デモ
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
 
-# ダウンロード / アップデート方法
-## ダウンロード
-下記リンクの赤枠部分をクリックしてDLしてください  
-https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
+※**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください  
+※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
 
-![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
+# 機能紹介
+## 画像管理
+画像を鉱物情報と一緒に管理できます  
+ドラッグ & ドロップ操作で簡単！閲覧もパン & ズームに対応です  
+![Photo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Photo.gif)  
 
-## アップデート
-すでに過去Versionをご使用の方はZIPファイル内 **[MinManager.exe] のみを既存フォルダに上書してください**  
-<font color="Tomato">**同梱の [DB] フォルダをコピーすると今までに登録されたデータが上書されてしまいます**</font>  
+## 簡単ラベル作成
+この趣味では必須となるラベル作成もワンクリック！  
+豊富なテンプレートからデザインを選べます  
+![Label](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Label.gif)  
+![LabelTempletes](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/LabelTemplates.jpg)
 
-## 履歴
-* **v1.2.2 (Latest release)**
+### オリジナルラベル もつくれます！
+好きな画像を読み込ませて自分だけのオリジナルラベルをつくれます  
+表示項目やフォントも設定可能です  
+![UserLabel](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/UserLabel.gif)
+## かゆい所に手が届く便利機能たち
+### オートコンプリート
+産地の綴りは覚えられない！過去に入力した情報を自動でサジェストしてくれます  
+![AutoComplete](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/AutoComplete.gif)
+### タグ機能
+色、結晶系、雰囲気、等々 自分の好きな切り口でコレクションをジャンル分けできます  
+もちろん検索可能です  
+![Tag](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Tag.gif)
+### Excelからの移行支援
+今から１件ずつちまちま登録なんてやってられないよ…、なんて方も安心です  
+同梱の [omake](#ダウンロード方法) を使えばMinManager用のデータを一括で作成できます
+### レポート
+コレクションの構成比や推移を表示できます  
+このXX年でいくら使ったかもすぐわかります  
+![Report](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Report.jpg)  
+
+## オンライン機能 (※登録制)
+MinManagerで登録した鉱物情報をオンライン上で共有できます  
+公開範囲が設定可能なので仲間内での **情報共有** や **コレクション交換** などにお役立てください  
+※開発者(@no_katsu)は本アプリケーション使用によって生じたいかなる損害に関して、一切の責任を負いかねます
+
+# 履歴
+* **v1.2.3 (Latest release)**
+    * (OTHER)その他
+        * ラベルデザインを2件追加(PhotoLabel3, MonotoneLabel)
+        * 本ドキュメント(readme)を加筆修正
+* **v1.2.2**
     * (BUG FIX)バグ修正
         * メイン画面で購入日が検索対象にならない問題を修正
     * (OTHER)その他
@@ -38,38 +67,19 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
         * .NET Core 3.1対応
         * ラベルサイズの見直し(全体的にフォントサイズが大きくなった)
         * ユーザカスタムラベル機能の拡充(表示項目の選択機能)
-* **v1.2.0**
-    * (NEW) 新機能
-        * ユーザカスタムラベル機能 実装
-    * (OTHER)その他
-        * ラベルテンプレートの拡充　(やけくそ15パターン)
+        
+[全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
-# 機能
-* 検索
-    * 前後部分一致
-* 追加 / 更新 / 削除
-    * 削除のみ複数件同時実行可能
-* 画像の追加 / 削除 / 閲覧
-    * クリックで大画面閲覧可能
-* Tag機能
-    * 任意のTag作成 / 削除
-        * 色、結晶系、雰囲気、等々 自分の好きな切り口で鉱物をジャンル分けできます
-    * 鉱物とTagの紐づけ
-		* 複数のTagに紐づけ可能
-* ラベル作成  
-    * ユーザカスタムラベル
-        * 枠画像をアップロードすることでお好きなデザインでラベルを作成できます
-        * ラベルに表示させたい項目を自由に選択できます
-        * ラベルに使用するフォントを自由に選択できます
-            * PCにインストールされているフォントから自動で一覧が作成されます
-* レポート表示
-* オンライン機能 (おまけ)
-    * MinManagerで登録した鉱物情報をオンライン上で共有できます
-        * 公開した情報はMinManagerでのみ閲覧可能です
-    * ステータス設定が可能です
-        * 販売中、放出可能、公開のみ、等
-    * 公開範囲設定が可能です
-        * 全体公開、相互フォローのみ、フォロワーのみ、等
+# ダウンロード / アップデート方法
+## ダウンロード方法
+下記リンクの赤枠部分をクリックしてDLしてください  
+https://github.com/nokatsu/MinManager/releases/tag/v1.2.3
+
+![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
+
+## アップデート方法
+すでに過去Versionをご使用の方はZIPファイル内 **[MinManager.exe] のみを既存フォルダに上書してください**  
+<font color="Tomato">**同梱の [DB] フォルダをコピーすると今までに登録されたデータが上書されてしまいます**</font>  
 
 # 使い方
 ## 対応OS
@@ -77,6 +87,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
     * 他OS(macなど)への対応予定はありません(WPFなのでできません)
 ## 起動方法
 * 解凍したフォルダ内にあるMinManager.exeをダブルクリックしてください
+    * 初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください  
 * 解凍したフォルダ内にあるDBフォルダは削除したり移動・改変を行わないでください  
 (MinManager.exeと同一フォルダに存在することが求められますのでデスクトップなどに配置したい場合は、MinManager.exeのショートカットを作成してください)
 ## 操作方法
@@ -110,6 +121,8 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
 * ラベル作成
     * メイン画面中部の一覧表より、対象としたい行を選択の上、画面上部の [Label Create] ボタンを押下してください
         * 複数行の選択に対応しています
+    * ラベル選択画面が開き、デザインテンプレートの一覧が表示されます
+    * ラベルに記載したい署名情報を [Signeture] に入力して画面下部 [Create] ボタンを押下してください
         * ライセンスの都合で一度に作成できるラベルは1ページまでとなります  
         それ以上は複数回に分けて作成を行ってください  
         1枚を超えた場合はエラーとなります
@@ -117,15 +130,16 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
         * ラベル選択画面上部の[Custom Label]ボタンを押下するとアップロード画面が開きます
         * 任意の画像をドラッグ&ドロップしてラベル枠を設定してください
             * アップロードする画像は透過pngをおすすめします
-            * 画像によってはデザインと文字と被ったり枠からはみ出ることがありますので承知おきください
+            * 画像によってはデザインと文字が被ったり枠からはみ出ることがありますので承知おきください
             * 文字数によってラベルの縦幅は自動拡張されます  
             それに合わせてアップロードした画像のアスペクト比も伸長します
+        * ラベルに表示したい項目を選択し、画面下部 [Create] ボタンを押下してください
 * 画像閲覧
     * マウスホイールで縮小 / 拡大が可能です
     * ドラッグで画像位置の変更が可能です
     * 右クリックまたは [Esc] キーの押下で元の画像サイズに戻ります
 * レポート表示
-    * メイン画面上部の[View Reports]ボタンを押下してください
+    * メイン画面上部の [View Reports] ボタンを押下してください
     * レポート閲覧画面が開き、登録されているデータ上最も古い購入日付から現在までの集計レポートが表示されます
         * レポート閲覧画面上部の3つの円グラフはそれぞれ鉱物、国、値段の構成比率を表します
         * レポート閲覧画面下部の積み上げグラフは時系列ごとの鉱物情報を表します
@@ -143,8 +157,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.2
 * おしゃれ CSS を書ける方はぜひ @no_katsu にお送りください、ラベルテンプレートに採用させていただきます
     * LabelデザインはCSSで定義しており、コード内でHTMLを生成 → PDF化しています
 
-# わかる人向け
-## バックアップについて
+# バックアップについて
 鉱物やTagのデータはJSON形式でDBフォルダ内に保存されますので定期的にバックアップをお勧めします  
 
 # コピーライト
