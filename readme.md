@@ -1,11 +1,11 @@
 # これなに？
 **MinManager は 無料 の 鉱物標本管理アプリケーション です**  
-MinManagerでは表計算ソフトでは難しい**ラベル作成**や**画像管理**といった便利な機能をお使いいただけます  
+**ラベル作成**や**画像管理**など、この趣味に特化して作られています  
 また、インターネットに接続していない環境でも動作します、外部と通信しないので安心です  
 
-最新バージョンのZIPファイルは
-**[ ここからダウンロード ](https://github.com/nokatsu/MinManager/releases/download/v1.2.3/MinManager-v1.2.3-win-x64.zip)**
-できます  
+最新バージョンのZIPファイルはここからダウンロードできます 
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.4/MinManager-v1.2.4-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.4/MinManager-v1.2.4-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
@@ -18,7 +18,6 @@ MinManagerでは表計算ソフトでは難しい**ラベル作成**や**画像�
 画像を鉱物情報と一緒に管理できます  
 ドラッグ & ドロップ操作で簡単！閲覧もパン & ズームに対応です  
 ![Photo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Photo.gif)  
-
 ## 簡単ラベル作成
 この趣味では必須となるラベル作成もワンクリック！  
 豊富なテンプレートからデザインを選べます  
@@ -37,12 +36,17 @@ MinManagerでは表計算ソフトでは難しい**ラベル作成**や**画像�
 色、結晶系、雰囲気、等々 自分の好きな切り口でコレクションをジャンル分けできます  
 もちろん検索可能です  
 ![Tag](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Tag.gif)
+### 地味に作りこまれた検索機能
+検索は入力と同時に動作するインクリメンタルサーチを採用しています(前後一致の曖昧検索)  
+スペースを使って複数のキーワードを指定可能なので共生標本も簡単に検索できます(ex. SmokyQuartz Amazonite)  
+また、よく使うキーワードを保存して再検索することもできます  
+![UserLabel](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Search.gif)
 ### Excelからの移行支援
 今から１件ずつちまちま登録なんてやってられないよ…、なんて方も安心です  
 同梱の [omake](#ダウンロード方法) を使えばMinManager用のデータを一括で作成できます
 ### レポート
 コレクションの構成比や推移を表示できます  
-このXX年でいくら使ったかもすぐわかります  
+この趣味にいくら使ったかもすぐわかります…  
 ![Report](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Report.jpg)  
 
 ## オンライン機能 (※登録制)
@@ -51,7 +55,20 @@ MinManagerで登録した鉱物情報をオンライン上で共有できます
 ※開発者(@no_katsu)は本アプリケーション使用によって生じたいかなる損害に関して、一切の責任を負いかねます
 
 # 履歴
-* **v1.2.3 (Latest release)**
+* **v1.2.4 (Latest release)**
+    * (NEW)新機能
+        * 検索機能拡充
+            * 検索キーワードの保存機能を実装
+            * 複数キーワードの指定に対応
+                * スペース区切りでAnd検索
+            * 検索件数を表示するように変更
+    * (BUG FIX)バグ修正
+        * カスタムラベル画面でSignetureを非表示にした際、テキストボックスが非活性にならない問題を修正
+    * (OTHER)その他
+        * Tag選択画面のデザインをFilterChipに変更
+        * ラベル作成処理を非同期化
+        * 起動時に設定ファイルが存在しなかった場合、異常終了とせずに空ファイルを生成するように変更
+* **v1.2.3**
     * (OTHER)その他
         * ラベルデザインを2件追加(PhotoLabel3, MonotoneLabel)
         * 本ドキュメント(readme)を加筆修正
@@ -62,18 +79,14 @@ MinManagerで登録した鉱物情報をオンライン上で共有できます
         * ユーザカスタムラベルにフォント選択機能を実装
         * ラベルデザインを1件追加(PhotoLabel2)
         * 画像閲覧画面のデフォルトサイズを最大に変更
-* **v1.2.1**
-    * (OTHER)その他
-        * .NET Core 3.1対応
-        * ラベルサイズの見直し(全体的にフォントサイズが大きくなった)
-        * ユーザカスタムラベル機能の拡充(表示項目の選択機能)
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
 # ダウンロード / アップデート方法
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
-https://github.com/nokatsu/MinManager/releases/tag/v1.2.3
+(x64が64bit版, x86が32bit版です)  
+https://github.com/nokatsu/MinManager/releases/tag/v1.2.4
 
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
@@ -93,7 +106,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.2.3
 ## 操作方法
 * 検索
     * メイン画面の上部 [keyword] に検索したい文字を入力してください
-    * 入力と同時に検索処理が動作します(前後部分一致検索)
+    * 入力と同時に検索処理が動作します(前後部分一致、スペース区切りでAnd検索)
     * 検索処理はメイン画面の一覧表に表示されているすべての列を対象に動作します
 * 追加
     * メイン画面下部 [Add Mineral]ボタンを押下してください  
