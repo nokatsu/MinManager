@@ -4,8 +4,8 @@
 また、インターネットに接続していない環境でも動作します、外部と通信しないので安心です  
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.4/MinManager-v1.2.4-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.4/MinManager-v1.2.4-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.5/MinManager-v1.2.5-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.5/MinManager-v1.2.5-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
@@ -55,7 +55,10 @@ MinManagerで登録した鉱物情報をオンライン上で共有できます
 ※開発者(@no_katsu)は本アプリケーション使用によって生じたいかなる損害に関して、一切の責任を負いかねます
 
 # 履歴
-* **v1.2.4 (Latest release)**
+* **v1.2.5 (Latest release)**
+    * (BUG FIX)バグ修正
+        * (致命バグ)ラベル作成に失敗した際、アプリケーションがハングする問題を修正
+* **v1.2.4**
     * (NEW)新機能
         * 検索機能拡充
             * 検索キーワードの保存機能を実装
@@ -72,13 +75,6 @@ MinManagerで登録した鉱物情報をオンライン上で共有できます
     * (OTHER)その他
         * ラベルデザインを2件追加(PhotoLabel3, MonotoneLabel)
         * 本ドキュメント(readme)を加筆修正
-* **v1.2.2**
-    * (BUG FIX)バグ修正
-        * メイン画面で購入日が検索対象にならない問題を修正
-    * (OTHER)その他
-        * ユーザカスタムラベルにフォント選択機能を実装
-        * ラベルデザインを1件追加(PhotoLabel2)
-        * 画像閲覧画面のデフォルトサイズを最大に変更
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
@@ -86,8 +82,7 @@ MinManagerで登録した鉱物情報をオンライン上で共有できます
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.2.4
-
+https://github.com/nokatsu/MinManager/releases/tag/v1.2.5
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
