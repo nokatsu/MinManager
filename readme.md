@@ -4,8 +4,8 @@
 また、インターネットに接続していない環境でも動作します、外部と通信しないので安心です  
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.5/MinManager-v1.2.6-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.5/MinManager-v1.2.6-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.6/MinManager-v1.2.6-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.6/MinManager-v1.2.6-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
