@@ -1,17 +1,42 @@
 # これなに？
 **MinManager は 無料 の 鉱物標本管理アプリケーション です**  
-**ラベル作成**や**画像管理**など、この趣味に特化して作られています  
-また、インターネットに接続していない環境でも動作します、外部と通信しないので安心です  
+**ラベル作成**や**画像管理**など、この趣味に特化して作られています   
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.6/MinManager-v1.2.6-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.2.6/MinManager-v1.2.6-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.3.0/MinManager-v1.3.0-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.3.0/MinManager-v1.3.0-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
 
 ※**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください  
 ※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
+
+# 履歴
+* **v1.3.0 (Latest release)**
+    * (NEW)新機能
+        * オンライン機能がTwitterと連携
+            * オンライン機能のユーザ登録が不要になりました
+            * Twitterの情報は本人確認とデータ公開範囲の判定にのみ使用しています
+            * 連携してもTwitter上でなんの操作も行いません(というかRead専用なので出来ません)
+        * オンライン機能にゲストモードを追加
+            * Twitter連携なしでも一部機能を利用可能になりました
+        * メニューバーを実装
+            * 鉱物、国(産地)、金額情報がツリー表示されます(クリックで検索します)
+    * (OTHER)その他
+        * 一部の画面を別window表示からdialog表示へ変更
+        * 詳細画面で産地情報を入力した際、国情報を補完するように実装 (ユーザ要望対応)
+        * 一覧表のサムネイルツールチップをPopupBoxに変更(レスポンス向上のため)
+* **v1.2.6**
+    * (OTHER)その他
+        * ラベルデザインを2件追加(PhotoLabel4, CandylopLabel)
+        * ラベルデザインを1件変更(PhotoLabel)
+        * メイン画面の一覧表にサムネイルツールチップを追加
+* **v1.2.5**
+    * (BUG FIX)バグ修正
+        * (致命バグ)ラベル作成に失敗した際、アプリケーションがハングする問題を修正
+        
+[全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
 # 機能紹介
 ## 画像管理
@@ -48,42 +73,22 @@
 コレクションの構成比や推移を表示できます  
 この趣味にいくら使ったかもすぐわかります…  
 ![Report](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Report.jpg)  
-
-## オンライン機能 (※登録制)
-MinManagerで登録した鉱物情報をオンライン上で共有できます  
+## オンライン機能
+### Twitter連携
+Twitterアカウントを使って、コレクションをオンライン上で共有できます  
 公開範囲が設定可能なので仲間内での **情報共有** や **コレクション交換** などにお役立てください  
+アカウント情報は本人確認と公開範囲の判定にのみ使用しています。連携してもTwitter上でなんの操作も行いません(というかRead専用なので出来ません)  
 ※開発者(@no_katsu)は本アプリケーション使用によって生じたいかなる損害に関して、一切の責任を負いかねます
-
-# 履歴
-* **v1.2.6 (Latest release)**
-    * (OTHER)その他
-        * ラベルデザインを2件追加(PhotoLabel4, CandylopLabel)
-        * ラベルデザインを1件変更(PhotoLabel)
-        * メイン画面の一覧表にサムネイルツールチップを追加
-* **v1.2.5**
-    * (BUG FIX)バグ修正
-        * (致命バグ)ラベル作成に失敗した際、アプリケーションがハングする問題を修正
-* **v1.2.4**
-    * (NEW)新機能
-        * 検索機能拡充
-            * 検索キーワードの保存機能を実装
-            * 複数キーワードの指定に対応
-                * スペース区切りでAnd検索
-            * 検索件数を表示するように変更
-    * (BUG FIX)バグ修正
-        * カスタムラベル画面でSignetureを非表示にした際、テキストボックスが非活性にならない問題を修正
-    * (OTHER)その他
-        * Tag選択画面のデザインをFilterChipに変更
-        * ラベル作成処理を非同期化
-        * 起動時に設定ファイルが存在しなかった場合、異常終了とせずに空ファイルを生成するように変更
-        
-[全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
+### ゲストモード
+アカウント連携はちょっと不安…という方も認証不要のゲストモードをご用意してあります  
+データの作成はできませんが、他のユーザが公開範囲を [全体公開] に設定したデータを閲覧できます  
+![AutoComplete](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Twitter.gif)
 
 # ダウンロード / アップデート方法
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.2.6
+https://github.com/nokatsu/MinManager/releases/tag/v1.3.0
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
