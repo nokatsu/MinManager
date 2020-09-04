@@ -3,8 +3,8 @@
 **ラベル作成**や**画像管理**など、この趣味に特化して作られています   
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.3.0/MinManager-v1.3.0-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.3.0/MinManager-v1.3.0-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.0/MinManager-v1.4.0-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.0/MinManager-v1.4.0-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
@@ -13,7 +13,24 @@
 ※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
 
 # 履歴
-* **v1.3.0 (Latest release)**
+* **v1.4.0 (Latest release)**
+    * (NEW)新機能
+        * イメージグリッドを実装
+            * 一覧表の視認性が向上し、ちょっとおしゃれになりました
+            * 従来の一覧表と切替可能です
+        * バックアップ機能を実装
+            * 「もしも」のために画像とデータをExportできるようになりました
+        * 画像保存機能を実装
+            * 閲覧中の画像をファイルに保存できるようになりました
+    * (BUG FIX)バグ修正
+        * ラベル作成の際、まれにダイアログが自動で閉じない問題を修正
+        * 購入日時が1件も設定されていない場合、レポート機能が使用できない問題を修正
+    * (OTHER)その他
+        * 内部リファクタリングを実施
+        * 実行時のメモリ使用量を削減
+        * ラベルデザインを1件追加(PhotoLabel5)
+        * ラベルデザインを1件変更(SimpleLabel)
+* **v1.3.0**
     * (NEW)新機能
         * オンライン機能がTwitterと連携
             * オンライン機能のユーザ登録が不要になりました
@@ -32,9 +49,6 @@
         * ラベルデザインを2件追加(PhotoLabel4, CandylopLabel)
         * ラベルデザインを1件変更(PhotoLabel)
         * メイン画面の一覧表にサムネイルツールチップを追加
-* **v1.2.5**
-    * (BUG FIX)バグ修正
-        * (致命バグ)ラベル作成に失敗した際、アプリケーションがハングする問題を修正
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
@@ -88,7 +102,7 @@ Twitterアカウントを使って、コレクションをオンライン上で�
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.3.0
+https://github.com/nokatsu/MinManager/releases/tag/v1.4.0
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
@@ -109,6 +123,8 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.3.0
     * メイン画面の上部 [keyword] に検索したい文字を入力してください
     * 入力と同時に検索処理が動作します(前後部分一致、スペース区切りでAnd検索)
     * 検索処理はメイン画面の一覧表に表示されているすべての列を対象に動作します
+    * [keyword] 横のトグルボタン(虫眼鏡アイコン)をクリックし、[save]を選択すると現在の検索条件を保存できます
+        * 保存した検索条件は同トグルボタンから選択可能です
 * 追加
     * メイン画面下部 [Add Mineral]ボタンを押下してください  
     * 詳細画面が開きますので、必要項目を入力して [Save] ボタンを押下してください
@@ -152,6 +168,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.3.0
     * マウスホイールで縮小 / 拡大が可能です
     * ドラッグで画像位置の変更が可能です
     * 右クリックまたは [Esc] キーの押下で元の画像サイズに戻ります
+    * [Save]ボタンを押下すると閲覧中の画像を保存できます
 * レポート表示
     * メイン画面上部の [View Reports] ボタンを押下してください
     * レポート閲覧画面が開き、登録されているデータ上最も古い購入日付から現在までの集計レポートが表示されます
@@ -187,6 +204,7 @@ Copyright 2019, ([@no_katsu](https://twitter.com/#!/no_katsu "twitter@no_katsu")
 	* 業務での利用を制限しません  
 
 # 利用ライブラリ
+* ReactiveProperty(https://github.com/runceel/ReactiveProperty)
 * AngleSharp(https://anglesharp.github.io/)
 * SelectPdf(https://selectpdf.com/community-edition/)
 * Dropbox Inc.(https://www.dropbox.com/developers)
