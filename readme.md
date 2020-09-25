@@ -3,8 +3,8 @@
 **ラベル作成**や**画像管理**など、この趣味に特化して作られています   
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.1/MinManager-v1.4.1-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.1/MinManager-v1.4.1-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.2/MinManager-v1.4.2-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.2/MinManager-v1.4.2-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
@@ -13,7 +13,14 @@
 ※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
 
 # 履歴
-* **v1.4.1 (Latest release)**
+* **v1.4.2 (Latest release)**
+    * (BUG FIX)バグ修正
+        * 画面解像度が低い場合、各種ダイアログが見切れてボタンを押下できなくなる問題を修正
+    * (OTHER)その他
+        * 一覧表切替ボタンを検索エリアに移動
+        * キャッシュクリア機能を実装
+        * イメージグリッドの画像をダブルクリックした際に詳細画面が開くように変更
+* **v1.4.1**
     * (BUG FIX)バグ修正
         * 詳細画面で画像を新規登録し、保存せずに閲覧した際にエラーとなる問題を修正
     * (OTHER)その他
@@ -39,20 +46,6 @@
         * 実行時のメモリ使用量を削減
         * ラベルデザインを1件追加(PhotoLabel5)
         * ラベルデザインを1件変更(SimpleLabel)
-* **v1.3.0**
-    * (NEW)新機能
-        * オンライン機能がTwitterと連携
-            * オンライン機能のユーザ登録が不要になりました
-            * Twitterの情報は本人確認とデータ公開範囲の判定にのみ使用しています
-            * 連携してもTwitter上でなんの操作も行いません(というかRead専用なので出来ません)
-        * オンライン機能にゲストモードを追加
-            * Twitter連携なしでも一部機能を利用可能になりました
-        * メニューバーを実装
-            * 鉱物、国(産地)、金額情報がツリー表示されます(クリックで検索します)
-    * (OTHER)その他
-        * 一部の画面を別window表示からdialog表示へ変更
-        * 詳細画面で産地情報を入力した際、国情報を補完するように実装 (ユーザ要望対応)
-        * 一覧表のサムネイルツールチップをPopupBoxに変更(レスポンス向上のため)
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
@@ -87,6 +80,9 @@
 ### Excelからの移行支援
 今から１件ずつちまちま登録なんてやってられないよ…、なんて方も安心です  
 同梱の [omake](#ダウンロード方法) を使えばMinManager用のデータを一括で作成できます
+### バックアップ
+ワンクリックでデータのバックアップが可能です  
+もしもの時に備えましょう！  
 ### レポート
 コレクションの構成比や推移を表示できます  
 この趣味にいくら使ったかもすぐわかります…  
@@ -100,13 +96,13 @@ Twitterアカウントを使って、コレクションをオンライン上で�
 ### ゲストモード
 アカウント連携はちょっと不安…という方も認証不要のゲストモードをご用意してあります  
 データの作成はできませんが、他のユーザが公開範囲を [全体公開] に設定したデータを閲覧できます  
-![AutoComplete](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Twitter.gif)
+![Twitter](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/Twitter.gif)
 
 # ダウンロード / アップデート方法
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.4.1
+https://github.com/nokatsu/MinManager/releases/tag/v1.4.2  
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
@@ -125,20 +121,20 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.4.1
 ## 操作方法
 * 検索
     * メイン画面の上部 [keyword] に検索したい文字を入力してください
-    * 入力と同時に検索処理が動作します(前後部分一致、スペース区切りでAnd検索)
+    * 入力と同時に検索処理が動作します(前後曖昧検索、スペース区切りでAnd判定)
     * 検索処理はメイン画面の一覧表に表示されているすべての列を対象に動作します
     * [keyword] 横のトグルボタン(虫眼鏡アイコン)をクリックし、[save]を選択すると現在の検索条件を保存できます
-        * 保存した検索条件は同トグルボタンから選択可能です
-* 追加
+        * 保存した検索条件は同トグルボタンから選択・削除可能です
+* データ追加
     * メイン画面下部 [Add Mineral]ボタンを押下してください  
     * 詳細画面が開きますので、必要項目を入力して [Save] ボタンを押下してください
         * [MainMineral] は必須項目となっています
-* 更新
+* データ更新
     * メイン画面中部の一覧表より、対象としたい行をダブルクリックしてください
         * 複数行の更新機能は実装されていません
     * 詳細画面が開きますので、必要項目を修正して [Save] ボタンを押下してください
         * [MainMineral] は必須項目となっています
-* 削除
+* データ削除
     * メイン画面中部の一覧表より、対象としたい行を選択して、メイン画面下部 [Delete Mineral] ボタンを押下してください
         * 複数行の削除機能に対応しています
         * 確認ダイアログが表示されますが、一度削除した行は復活しないのでご注意ください
@@ -151,7 +147,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.4.1
     * Tag名の編集を行いたい場合はTag編集画面の一覧表より、対象としたい行をダブルクリックしてください
     * Tagを削除したい場合は対象としたい行を選択の上、 [Delete] ボタンを押下してください
         * 確認ダイアログが表示されますが、一度削除した行は復活しないのでご注意ください
-        * Tagを削除した場合、各鉱物に紐づいていたそのTag情報も合わせて削除されます
+        * Tagを削除した場合、各データに紐づけていた該当Tag情報は解除されます
 * ラベル作成
     * メイン画面中部の一覧表より、対象としたい行を選択の上、画面上部の [Label Create] ボタンを押下してください
         * 複数行の選択に対応しています
@@ -194,6 +190,7 @@ https://github.com/nokatsu/MinManager/releases/tag/v1.4.1
 
 # バックアップについて
 鉱物やTagのデータはJSON形式でDBフォルダ内に保存されますので定期的にバックアップをお勧めします  
+バックアップはメイン画面のメニューバー内 [Setting] より実行できます
 
 # コピーライト
 Copyright 2019, ([@no_katsu](https://twitter.com/#!/no_katsu "twitter@no_katsu")).  
