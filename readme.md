@@ -3,17 +3,33 @@
 **ラベル作成**や**画像管理**など、この趣味に特化して作られています   
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.2/MinManager-v1.4.2-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.2/MinManager-v1.4.2-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.3/MinManager-v1.4.3-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.3/MinManager-v1.4.3-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
 ![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
 
-※**Windowsのみ**対応です、mac対応はできませんので悪しからずご了承ください  
+※**Windowsのみ**対応です、スマートフォン、mac対応はできませんので悪しからずご了承ください  
 ※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
 
 # 履歴
-* **v1.4.2 (Latest release)**
+* **v1.4.3 (Latest release)**
+    * (NEW)新機能
+        * 詳細画面に[mindatで検索]機能を実装
+        * 詳細画面に[クリップボードにコピー]機能を実装
+            * [鉱物名 / 産地] 形式 
+    * (BUG FIX)バグ修正
+        * 画面描画されていない行の選択状態が更新されない問題を修正
+    * (OTHER)その他
+        * イメージグリッド、詳細画面に国旗情報が表示されるようになりました
+            * 国名は日本語・英語・国コード(2文字、ほぼ ISO 3166-1) に対応しています
+        * ラベルデザインを3件追加(NationalFlagLabel, PhotoLabel6, LLensLabel)
+        * ラベルデザインを2件変更(SimpleLabel, PhotoLabel2)
+        * 起動時にスプラッシュスクリーンを設定
+        * イメージグリッドに画像ショートカットを実装
+        * イメージグリッドに検索ショートカットを実装
+            * [鉱物名]、[産地]、[国]、[国旗アイコン]のダブルクリックに対応しています
+* **v1.4.2**
     * (BUG FIX)バグ修正
         * 画面解像度が低い場合、各種ダイアログが見切れてボタンを押下できなくなる問題を修正
     * (OTHER)その他
@@ -29,27 +45,15 @@
         * イメージグリッド内のEditボタンに二度押防止処理を追加
         * イメージグリッドのスクロール量をアイテム単位からピクセル単位に変更
         * イメージグリッドのデフォルト画像を変更
-* **v1.4.0**
-    * (NEW)新機能
-        * イメージグリッドを実装
-            * 一覧表の視認性が向上し、ちょっとおしゃれになりました
-            * 従来の一覧表と切替可能です
-        * バックアップ機能を実装
-            * 「もしも」のために画像とデータをExportできるようになりました
-        * 画像保存機能を実装
-            * 閲覧中の画像をファイルに保存できるようになりました
-    * (BUG FIX)バグ修正
-        * ラベル作成の際、まれにダイアログが自動で閉じない問題を修正
-        * 購入日時が1件も設定されていない場合、レポート機能が使用できない問題を修正
-    * (OTHER)その他
-        * 内部リファクタリングを実施
-        * 実行時のメモリ使用量を削減
-        * ラベルデザインを1件追加(PhotoLabel5)
-        * ラベルデザインを1件変更(SimpleLabel)
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
 # 機能紹介
+## スタンドアローン
+インストール、ユーザ登録、一切不要です  
+ダウンロードしたZIPファイルを解凍するだけで使用できます  
+アンインストールも解凍したフォルダを削除するだけです  
+また、外部と通信を行わないためインターネットに接続されていない環境でも動作します(※Twitter連携機能を除く)  
 ## 画像管理
 画像を鉱物情報と一緒に管理できます  
 ドラッグ & ドロップ操作で簡単！閲覧もパン & ズームに対応です  
@@ -102,7 +106,7 @@ Twitterアカウントを使って、コレクションをオンライン上で�
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.4.2  
+https://github.com/nokatsu/MinManager/releases/tag/v1.4.3  
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
