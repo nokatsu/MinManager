@@ -3,17 +3,28 @@
 **ラベル作成**や**画像管理**など、この趣味に特化して作られています   
 
 最新バージョンのZIPファイルはここからダウンロードできます 
-**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.5/MinManager-v1.4.5-win-x64.zip)**
-**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.5/MinManager-v1.4.5-win-x86.zip)**  
+**[ (64bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.6/MinManager-v1.4.6-win-x64.zip)**
+**[ (32bit版) ](https://github.com/nokatsu/MinManager/releases/download/v1.4.6/MinManager-v1.4.6-win-x86.zip)**  
 使用方法については本ドキュメントをご参照ください
 
-![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/MineralManager2.gif)
+![demo](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/top.jpg)
 
 ※**Windowsのみ**対応です、スマートフォン、mac対応はできませんので悪しからずご了承ください  
 ※初回のみ起動が遅くなります、申し訳ありませんが気長にお待ちください
 
 # 履歴
-* **v1.4.5 (Latest release)**
+* **v1.4.6 (latest release)**
+    * (BUG FIX)バグ修正
+        * 画像閲覧画面でまれに画像サイズがウィンドウサイズと連動しない問題を修正
+    * (OTHER)その他
+        * .NET 6対応
+        * イメージグリッド表示時、各レコードに設定されているTag情報をToolChip表示するように変更
+        * メイン画面で列ソート状態を解除できるように変更
+            * 3回列をクリック数とソート状態が解除されます
+        * メイン画面で複数列ソート可能なように変更
+            * [Shift] + 列クリックで複数の列に対してソートを行うことができます
+        * Tag選択画面のUIデザインを微修正
+* **v1.4.5**
     * (BUG FIX)バグ修正
         * 詳細画面の[産地]編集時、入力値が意図せず全体選択されてしまう問題を修正
 * **v1.4.4**
@@ -22,22 +33,6 @@
             * まれにexeをクリックしても実行しなくなる問題が解消します
         * 検索キーワード入力を円滑化
             * 入力から検索実行まで1sの猶予を設定
-* **v1.4.3**
-    * (NEW)新機能
-        * 詳細画面に[mindatで検索]機能を実装
-        * 詳細画面に[クリップボードにコピー]機能を実装
-            * [鉱物名 / 産地] 形式 
-    * (BUG FIX)バグ修正
-        * 画面描画されていない行の選択状態が更新されない問題を修正
-    * (OTHER)その他
-        * イメージグリッド、詳細画面に国旗情報が表示されるようになりました
-            * 国名は日本語・英語・国コード(2文字、ほぼ ISO 3166-1) に対応しています
-        * ラベルデザインを3件追加(NationalFlagLabel, PhotoLabel6, LLensLabel)
-        * ラベルデザインを2件変更(SimpleLabel, PhotoLabel2)
-        * 起動時にスプラッシュスクリーンを設定
-        * イメージグリッドに画像ショートカットを実装
-        * イメージグリッドに検索ショートカットを実装
-            * [鉱物名]、[産地]、[国]、[国旗アイコン]のダブルクリックに対応しています
         
 [全リリース履歴はこちら](https://github.com/nokatsu/MinManager/releases)
 
@@ -99,7 +94,7 @@ Twitterアカウントを使って、コレクションをオンライン上で�
 ## ダウンロード方法
 下記リンクの赤枠部分をクリックしてDLしてください  
 (x64が64bit版, x86が32bit版です)  
-https://github.com/nokatsu/MinManager/releases/tag/v1.4.5  
+https://github.com/nokatsu/MinManager/releases/tag/v1.4.6  
 ![dl](https://raw.githubusercontent.com/wiki/nokatsu/MinManager/images/dl.jpg)
 
 ## アップデート方法
